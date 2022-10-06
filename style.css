@@ -102,12 +102,12 @@ p{
     object-fit:cover;
     background-position:center;
     border-radius:50%;
-    border: 10px solid #eb6123
+    border: 5px solid #eb6123
 }
 .grid{
     display:grid;
     place-content:center
 }
 img {
-  border: 10px solid #eb6123
+  border: 5px solid #eb6123
 }
