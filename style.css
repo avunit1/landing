@@ -108,3 +108,6 @@ p{
     display:grid;
     place-content:center
 }
+img {
+  border: 20px solid #eb6123
+}
