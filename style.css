@@ -10,14 +10,14 @@
     border-radius:8px;
     cursor:pointer;
     color:#fff8f1;
-    background-color:#23b0ff;
-    box-shadow:0 5px 0 #1a6d9d
+    background-color:#eb6123;
+    box-shadow:0 5px 0 #772c0a
 }
 .button:focus,button:active{
     outline:10px auto -webkit-focus-ring-color
 }
 .button:hover,button:hover{
-    background-color:#206895;
+    background-color:#772c0a;
     color:#eae0d5;
     border-color:#888;
     outline:0;
