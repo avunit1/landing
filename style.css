@@ -101,7 +101,8 @@ p{
     height:128px;
     object-fit:cover;
     background-position:center;
-    border-radius:50%
+    border-radius:50%;
+    border: 10px solid #eb6123
 }
 .grid{
     display:grid;
