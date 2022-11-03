@@ -10,14 +10,14 @@
     border-radius:8px;
     cursor:pointer;
     color:#fff8f1;
-    background-color:#C0D6E4;
-    box-shadow:0 5px 0 #606B72
+    background-color:#5D3FD3;
+    box-shadow:0 5px 0 #2a1d5a
 }
 .button:focus,button:active{
     outline:10px auto -webkit-focus-ring-color
 }
 .button:hover,button:hover{
-    background-color:#606B72;
+    background-color:#2a1d5a;
     color:#eae0d5;
     border-color:#888;
     outline:0;
@@ -102,12 +102,12 @@ p{
     object-fit:cover;
     background-position:center;
     border-radius:50%;
-    border: 5px solid #C0D6E4
+    border: 5px solid #5D3FD3
 }
 .grid{
     display:grid;
     place-content:center
 }
 img {
-  border: 5px solid #C0D6E4
+  border: 5px solid #5D3FD3
 }
