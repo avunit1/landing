@@ -35,26 +35,19 @@ setInterval(function() {
 document.addEventListener("keydown", function(event) {
   if (event.code === "Enter") {
     if (inputValue === "blog") {
-      window.open("https://blog.avunit.tk/", "_blank");
-      location.reload();
+      window.href("https://blog.avunit.tk/", "_blank");
     } else if (inputValue === "about") {
-      window.open("https://blog.avunit.tk/posts/whoami/", "_blank");
-      location.reload();
+      window.href("https://blog.avunit.tk/posts/whoami/", "_blank");
     } else if (inputValue === "retro") {
-      window.open("https://coolsite.avunit.tk/", "_blank");
-      location.reload();
+      window.href("https://coolsite.avunit.tk/", "_blank");
     } else if (inputValue === "uptime") {
-      window.open("https://uptime.avunit.tk/", "_blank");
-      location.reload();
+      window.href("https://uptime.avunit.tk/", "_blank");
     } else if (inputValue === "rickroll") {
-      window.open("https://troll.avunit.tk/", "_blank");
-      location.reload();
+      window.href("https://troll.avunit.tk/", "_blank");
     } else if (inputValue === "gitfolio") {
-      window.open("https://gitfolio.avunit.tk/", "_blank");
-      location.reload();
+      window.href("https://gitfolio.avunit.tk/", "_blank");
     } else if (inputValue === "github") {
-      window.open("https://github.com/avunit1", "_blank");
-      location.reload();
+      window.href("https://github.com/avunit1", "_blank");
     }
   }
 });
