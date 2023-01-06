@@ -34,20 +34,28 @@ setInterval(function() {
 
 document.addEventListener("keydown", function(event) {
   if (event.code === "Enter") {
-    if (inputValue === "blog") {
-      window.href("https://blog.avunit.tk/", "_blank");
-    } else if (inputValue === "about") {
-      window.href("https://blog.avunit.tk/posts/whoami/", "_blank");
-    } else if (inputValue === "retro") {
-      window.href("https://coolsite.avunit.tk/", "_blank");
-    } else if (inputValue === "uptime") {
-      window.href("https://uptime.avunit.tk/", "_blank");
-    } else if (inputValue === "rickroll") {
-      window.href("https://troll.avunit.tk/", "_blank");
-    } else if (inputValue === "gitfolio") {
-      window.href("https://gitfolio.avunit.tk/", "_blank");
-    } else if (inputValue === "github") {
-      window.href("https://github.com/avunit1", "_blank");
+    switch (inputValue) {
+      case "blog":
+      window.href = "https://blog.avunit.tk/";
+      break;
+      case "about":
+      window.href = "https://blog.avunit.tk/posts/whoami/";
+      break;
+      case "retro":
+      window.href = "https://coolsite.avunit.tk/";
+      break;
+      case "uptime":
+      window.href = "https://uptime.avunit.tk/";
+      break;
+      case "rickroll":
+      window.href = "https://troll.avunit.tk/";
+      break;
+      case "gitfolio":
+      window.href = "https://gitfolio.avunit.tk/";
+      break;
+      case "github":
+      window.href = "https://github.com/avunit1";
+      break;
     }
   }
 });
