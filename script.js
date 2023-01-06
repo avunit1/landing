@@ -32,30 +32,24 @@ setInterval(function() {
   inputValue = document.getElementById("input").value;
 }, 10);
 
-document.addEventListener("keydown", function(event) {
-  if (event.code === "Enter") {
-    switch (inputValue) {
-      case "blog":
-      window.href = "https://blog.avunit.tk/";
-      break;
-      case "about":
-      window.href = "https://blog.avunit.tk/posts/whoami/";
-      break;
-      case "retro":
-      window.href = "https://coolsite.avunit.tk/";
-      break;
-      case "uptime":
-      window.href = "https://uptime.avunit.tk/";
-      break;
-      case "rickroll":
-      window.href = "https://troll.avunit.tk/";
-      break;
-      case "gitfolio":
-      window.href = "https://gitfolio.avunit.tk/";
-      break;
-      case "github":
-      window.href = "https://github.com/avunit1";
-      break;
+document.addEventListener('keydown', function(event) {
+  if (event.code === 'Enter') {
+    event.preventDefault();
+    let inputValue = document.getElementById("input").value;
+    if (inputValue === "blog") {
+      window.location.href = "https://blog.avunit.tk/";
+    } else if (inputValue === "about") {
+      window.location.href = "https://blog.avunit.tk/posts/whoami/";
+    } else if (inputValue === "retro") {
+      window.location.href = "https://coolsite.avunit.tk/";
+    } else if (inputValue === "uptime") {
+      window.location.href = "https://uptime.avunit.tk/";
+    } else if (inputValue === "rickroll") {
+      window.location.href = "https://troll.avunit.tk/";
+    } else if (inputValue === "gitfolio") {
+      window.location.href = "https://gitfolio.avunit.tk/";
+    } else if (inputValue === "github") {
+      window.location.href = "https://github.com/avunit1";
     }
   }
 });
