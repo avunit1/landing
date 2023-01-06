@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Comic Cat';
+    src: url('ComicCat.ttf') format('truetype');
+  }
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    overflow: hidden; /* Hide the scroll bars */
+}
+
+h1 {
+    font-family: 'Comic Cat', Arial, sans-serif;
+    font-size: 3em;
+    margin: 0.75em 0 0.5em;
+    color: #ed8801;
+}
+
+nav {
+    font-size: 1.5em;
+    margin: 1em 0;
+    font-family: 'Comic Cat', Arial, sans-serif;
+}
+
+#input {
+    font-family: 'Comic Cat', Arial, sans-serif;
+    font-size: 10em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: transparent;
+    text-shadow: 0 0 0 white;
+    caret-color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+    white-space: nowrap; /* Prevent the input box from wrapping to multiple lines */
+    text-align: center; /* Align the text to the center of the input box */
+    padding: 0; /* Remove padding from the input box */
+    box-sizing: border-box; /* Make the border not count towards the size of the input box */
+    width: 100% !important;
+    height: auto !important;
+    min-width: 0;
+}	
+
+@keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+#cursor {
+	font-family: 'Comic Cat', Arial, sans-serif;
+	font-size: 8em;
+	color: white;
+	position: absolute;
+	top: 50%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+	animation: blink 1s infinite;
+    opacity: 100%;
+}
